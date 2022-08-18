@@ -100,6 +100,12 @@ body {
   padding: 0 15px;
 }
 
+.wrapper-2 {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .wr-content {
   max-width: 1060px;
   margin: 0 auto;
@@ -229,11 +235,15 @@ body {
 }
 
 .founder {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../img/icon/line.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto auto;
 }
 .founder__company {
   margin-bottom: 24px;
@@ -261,11 +271,53 @@ body {
 }
 .founder__info {
   font-size: 24px;
-  max-width: 960px;
-  min-width: 320px;
 }
 .founder__info span {
   font-weight: bold;
+}
+
+.digit {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.digit__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.digit__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 350px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+.digit__img {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 20px;
+}
+.digit__title {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.digit__title::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: #3e3d3d;
+  position: relative;
+  top: 16px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.digit__info {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
