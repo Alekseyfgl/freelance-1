@@ -69,6 +69,7 @@ body {
   color: #3e3d3d;
   line-height: 1.2;
   overflow-x: hidden;
+  position: relative;
 }
 
 .btn-style {
@@ -83,6 +84,17 @@ body {
   transform: scale(1.08);
 }
 
+.small-btn-style {
+  color: #fff;
+  padding: 8px 16px;
+  background: linear-gradient(to right, #fca445 0%, #e8580c 100%);
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.small-btn-style:hover {
+  transform: scale(1.08);
+}
+
 .border-main-content {
   padding: 34px;
   background-color: rgba(32, 29, 29, 0.5);
@@ -90,6 +102,146 @@ body {
   color: #fff;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 77, 112, 0.8);
+}
+.modal__dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__content {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  overflow-y: auto;
+}
+.modal__description {
+  min-width: 320px;
+  padding: 30px;
+}
+.modal__description-title {
+  color: #0089c8;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal ul {
+  margin-bottom: 26px;
+}
+.modal__description-sub-title {
+  color: #0089c8;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.modal__description-list {
+  position: relative;
+}
+.modal__description-list::before {
+  content: " ";
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #0089c8;
+  position: absolute;
+  top: 6px;
+  left: -8px;
+  border-radius: 50%;
+}
+.modal__form {
+  padding: 65px 30px 65px 30px;
+  background-color: #004d70;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal__title {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.modal__text-form {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.modal__label {
+  margin-left: 45px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.modal__wr-input {
+  margin-bottom: 16px;
+  color: #fff;
+}
+.modal__wr-input label {
+  font-size: 16px;
+}
+.modal__wr-input input {
+  width: 100%;
+  border-radius: 3px;
+  padding: 8px;
+  border: #fff solid 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #0089c8;
+}
+.modal__wr-input input::placeholder {
+  opacity: 0.5;
+  color: #0089c8;
+}
+.modal__ch {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.modal__btn {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header {
   margin-bottom: 16px;
 }
@@ -318,6 +470,74 @@ body {
 }
 .digit__info {
   text-align: center;
+}
+
+.types-coverings {
+  background: url("../img/types/types1.jpg") no-repeat center top, url("../img/types/types2.jpg") no-repeat center 500px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.types-coverings__title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.types-coverings__description {
+  margin-bottom: 25px;
+  text-align: center;
+  max-width: 956px;
+}
+.types-coverings__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.types-coverings__item-wr {
+  position: relative;
+  background-color: rgba(7, 121, 172, 0.7);
+  width: 46%;
+  padding: 20px;
+}
+.types-coverings__item-wr::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 65%;
+  background: rgba(255, 255, 255, 0.33);
+  position: absolute;
+  top: 28px;
+  right: -5%;
+}
+.types-coverings__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 460px;
+  flex-wrap: wrap;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+.types-coverings__item-type {
+  color: rgba(109, 253, 255, 0.4);
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.types-coverings__item-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 160px;
+}
+.types-coverings .type-1 {
+  background-image: url("../img/types/minimum.jpg");
+}
+.types-coverings .type-2 {
+  background-image: url("../img/types/optim.jpg");
+}
+.types-coverings .type-3 {
+  background-image: url("../img/types/vip.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -30,10 +30,22 @@ body {
     color: #3e3d3d;
     line-height: 1.2;
     overflow-x: hidden;
+    position: relative;
 }
 
 .btn-style{
     font-size: 18px;
+    color: #fff;
+    padding: 8px 16px;
+    background: linear-gradient(to right, #fca445 0%, #e8580c 100%);
+    border-radius: 7px;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+
+.small-btn-style{
     color: #fff;
     padding: 8px 16px;
     background: linear-gradient(to right, #fca445 0%, #e8580c 100%);
