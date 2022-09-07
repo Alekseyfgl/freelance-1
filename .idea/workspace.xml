@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/types/minimum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/types/optim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/types/types1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/types/types2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/types/vip.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_setting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_setting.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
@@ -41,13 +33,13 @@
   "keyToString": {
     "NewWatcherDialog.advanced.open": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/downloaded/JS_task_answers-JS_step_10",
+    "last_opened_file_path": "D:/#vs/#project/Atlantida-pre",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.database.main",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +82,9 @@
       <workItem from="1661160297333" duration="25000" />
       <workItem from="1661367894630" duration="21000" />
       <workItem from="1662230177212" duration="9740000" />
-      <workItem from="1662273746227" duration="12632000" />
+      <workItem from="1662273746227" duration="12827000" />
+      <workItem from="1662574694925" duration="1867000" />
+      <workItem from="1662576843157" duration="2076000" />
     </task>
     <servers />
   </component>
