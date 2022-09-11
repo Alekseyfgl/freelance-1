@@ -1,6 +1,7 @@
 @import "fonts";
 @import "setting";
 @import "modal";
+@import "gallery";
 
 .header {
     margin-bottom: 16px;
@@ -732,17 +733,16 @@
         flex: 1 1 260px;
         height: 200px;
         overflow: hidden;
+        cursor: pointer;
 
         background-image: url("../img/works/brovinka/w1_1.jpg");
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: cover;
-        cursor: pointer;
         transition: 0.5s;
         &:hover {
             .works__inner {
                 bottom: 0;
-                //box-shadow: 0 0 25px rgb(1 141 181);
             }
 
             box-shadow: 0 0 25px rgb(1 141 181);
@@ -779,6 +779,13 @@
         text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
         color: #fff;
         transition: 0.3s;
+        position: relative;
+        .trigger {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
         .wr-svg {
             display: flex;
             align-items: center;
@@ -790,8 +797,6 @@
             background: linear-gradient(to right, #fca445 0%, #e8580c 100%);
         }
         &:hover {
-            //color: #fca445;
-            //transform: scale(1.1);
             border: #e8580c solid 1px;
         }
     }
@@ -799,5 +804,35 @@
     svg {
         height: 16px;
         fill: #fff;
+    }
+
+    //setting modal
+    .modal__close {
+        color: #000;
+    }
+    .modal__info {
+        min-width: 340px;
+        padding: 30px 20px 20px 20px;
+    }
+    .container-gallery {
+        padding: 10px;
+    }
+
+    .modal__info-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+        color: #0089c8;
+    }
+
+    .modal__info-subtitle {
+        font-size: 18px;
+        color: #0089c8;
+        border-bottom: #0089c8 solid 1px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .modal__info-text {
+        font-size: 18px;
+        margin-bottom: 16px;
     }
 }

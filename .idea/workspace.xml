@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/works/brovinka/w1_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/magnifying-glass-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/brovinka/w5_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/brovinka/w5_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/brovinka/w5_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/_gallery.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
@@ -34,7 +41,7 @@
   "keyToString": {
     "NewWatcherDialog.advanced.open": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/#vs/#project/freelance_1/img/works/brovinka",
+    "last_opened_file_path": "D:/#vs/#project/freelance_1/img/icon",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,22 +53,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#vs\#project\freelance_1\img\icon" />
       <recent name="D:\#vs\#project\freelance_1\img\works\brovinka" />
       <recent name="D:\#vs\#project\freelance_1\img\order" />
       <recent name="D:\#vs\#project\freelance_1\img\types" />
       <recent name="D:\#vs\#project\freelance_1\img\digit" />
-      <recent name="D:\#vs\#project\freelance_1\img\icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\#vs\#project\freelance_1\img\bg" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.block.js">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/freelance_1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="block.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/block.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.block.js" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -88,7 +99,12 @@
       <workItem from="1662574694925" duration="1867000" />
       <workItem from="1662576843157" duration="2634000" />
       <workItem from="1662738368373" duration="5911000" />
-      <workItem from="1662792060673" duration="6540000" />
+      <workItem from="1662792060673" duration="7378000" />
+      <workItem from="1662799542073" duration="128000" />
+      <workItem from="1662799682475" duration="1181000" />
+      <workItem from="1662819628287" duration="2166000" />
+      <workItem from="1662825802280" duration="87000" />
+      <workItem from="1662887289646" duration="13639000" />
     </task>
     <servers />
   </component>
