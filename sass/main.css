@@ -235,6 +235,13 @@ body {
   animation-duration: 0.3s;
 }
 
+.modal__close {
+  transition: 0.3s;
+}
+.modal__close:hover {
+  opacity: 1;
+}
+
 @keyframes fade {
   from {
     opacity: 0.3;
@@ -960,6 +967,38 @@ body {
 .works .modal__info-text {
   font-size: 18px;
   margin-bottom: 16px;
+}
+
+.warning {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-image: url("../img/bg/bg2_c.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+.warning__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.warning__text {
+  margin-bottom: 10px;
+}
+.warning__text:last-of-type {
+  margin-bottom: 30px;
+}
+.warning__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.technology {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.technology__text {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
