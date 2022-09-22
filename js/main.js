@@ -1,29 +1,9 @@
 const body = document.getElementsByTagName('body')[0];
-// let gallery = document.querySelectorAll(".image");
-// let previewBox = document.querySelector(".preview-box");
-// let previewImg = previewBox.querySelector("img");
-// let closeIcon = previewBox.querySelector(".icon");
-// let currentImg = previewBox.querySelector(".current-img");
-// let totalImg = previewBox.querySelector(".total-img");
-// let shadow = document.querySelector(".shadow");
-
-let gallery;
-let previewBox;
-let previewImg;
-let closeIcon;
-let currentImg;
-let totalImg;
-let shadow;
-
-let prevBtn;
-let nextBtn;
-let imageURL;
 
 body.onclick = (e) => {
     const target = e.target;
     const modalElem = target.parentElement.parentElement.children[1];
-    // console.log(e.target)
-    // console.log(target)
+
     if (target.classList.contains('types-coverings__item-btn')) {
         openModal(modalElem)
     } else if (target.classList.contains('show')) {
@@ -53,3 +33,14 @@ function openModal(el) {
     document.body.style.overflow = 'hidden';
 }
 
+function foo(arr) {
+    let str = '';
+    let sql = `delete from nodes where id in`
+
+    arr.forEach(item => {
+        str += `${item},`
+    })
+    sql +=` (${str.slice(0,-1)})`
+    console.log(sql)
+}
+foo([2,3,4,5,6,7])
