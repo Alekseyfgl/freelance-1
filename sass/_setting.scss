@@ -12,6 +12,10 @@
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 input::-ms-clear{display: none;}
+input:focus{
+    box-shadow: 0 0 15px rgb(81 203 219);
+    transition: 0.2s;
+}
 button{cursor: pointer;}    
 button::-moz-focus-inner{padding:0;border:0;}
 a,a :visited {text-decoration: none;}
@@ -62,3 +66,4 @@ body {
     border-radius: 26px;
     color: #fff;
 }
+

@@ -25,7 +25,7 @@
                 <a href="mailto:Mmerzlyackov@mail.ru">Mmerzlyackov@mail.ru</a>
             </div>
 
-            <button class='request-call btn-style'>Заказать звонок</button>
+            <button class='request-call btn-style modal-calling'>Заказать звонок</button>
 
             <div class="social-networks">
                 <a class="social-networks__whatsapp social-networks__wr"
@@ -38,6 +38,43 @@
                 <a class="social-networks__viber social-networks__wr" href="viber://chat?number=%2B375333307321">
                     <img src="./img/icon/viber.png" alt="viber-img">
                 </a>
+            </div>
+
+            <div class="modal hide fade modal-for-calling">
+                <div class="modal__dialog">
+                    <div class="modal__content small">
+                        <form action="#" class="modal__form">
+
+                            <div class="modal__title">Мы перезвоним вам</div>
+                            <p class="modal__text-form">
+                                Заполните форму, и мы свяжемся
+                                с вами в ближайшее время
+                            </p>
+                            <div class="modal__wr-input">
+                                <label class="modal__lable" for="modal-name-call">Ваше имя: </label>
+                                <input type="text" id="modal-name-call" name="name" placeholder="Михаил"
+                                       required/>
+                            </div>
+                            <div class="modal__wr-input">
+                                <label class="modal__lable" for="modal-phone-call">Ваш телефон: </label>
+                                <input type="tel" id="modal-phone-call" name="phone" placeholder="+375295678899"
+                                       required pattern="/(?:\+|\d)[\d\-\(\) ]{9,}\d/g"/>
+                            </div>
+                            <div class="modal__wr-input">
+                                <label class="modal__lable" for="modal-email-call">Ваш e-mail: </label>
+                                <input type="email" id="modal-email-call" name="email"
+                                       placeholder="mihail_pashkevich@gmail.com"
+                                       required/>
+                            </div>
+                            <div class="modal__ch politic required">
+                                <input type="checkbox" name="politic" checked="" required>
+                                <span class="modal__ch-text">Нажимая на кнопку, вы соглашаетесь с нашей политикой конфиденциальности</span>
+                            </div>
+                            <button class="modal__btn small-btn-style">Заказать звонок</button>
+                        </form>
+                    </div>
+                    <div class="modal__close" data-close="">×</div>
+                </div>
             </div>
         </div>
 
@@ -63,10 +100,10 @@
 
             <p class="content-main__title-for-message">Оставь номер телефона, чтобы узнать как гарантированно
                 остановить ежемесячные растяжки коров</p>
-            <div class="content-main__wr-message">
-                <input class="content-main__phone" type="phone" placeholder="+375(33) 543-23-45">
+            <form class="content-main__wr-message">
+                <input class="content-main__phone" type="tel" placeholder="+375(33) 543-23-45"  pattern="(?:\+|\d)[\d\-\(\) ]{9,}\d">
                 <button class="content-main__send-phone btn-style">Остановить растяжки</button>
-            </div>
+            </form>
         </div>
     </div>
     <div class="coins wr-content border-main-content">
@@ -285,7 +322,7 @@
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-phone-minimum">Ваш телефон: </label>
                                     <input type="tel" id="modal-phone-minimum" name="phone" placeholder="+375295678899"
-                                           required/>
+                                           required pattern="/(?:\+|\d)[\d\-\(\) ]{9,}\d/g"/>
                                 </div>
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-email-minimum">Ваш e-mail: </label>
@@ -354,7 +391,7 @@
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-phone-optimum">Ваш телефон: </label>
                                     <input type="tel" id="modal-phone-optimum" name="phone" placeholder="+375295678899"
-                                           required/>
+                                           required pattern="/(?:\+|\d)[\d\-\(\) ]{9,}\d/g"/>
                                 </div>
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-email-optimum">Ваш e-mail: </label>
@@ -422,7 +459,7 @@
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-phone-vip">Ваш телефон: </label>
                                     <input type="tel" id="modal-phone-vip" name="phone" placeholder="+375295678899"
-                                           required/>
+                                           required pattern="/(?:\+|\d)[\d\-\(\) ]{9,}\d/g"/>
                                 </div>
                                 <div class="modal__wr-input">
                                     <label class="modal__lable" for="modal-email-vip">Ваш e-mail: </label>
@@ -583,7 +620,7 @@
                     <label class="order-from__lable" for="order-phone">Ваш телефон: </label>
                     <input class="order-from__input" type="tel" id="order-phone" name="phone"
                            placeholder="+375296429295"
-                           required/>
+                           required pattern="/(?:\+|\d)[\d\-\(\) ]{9,}\d/g"/>
                 </div>
                 <div class="order-from__wr-input">
                     <label class="order-from__lable" for="order-email">Ваш e-mail: </label>
@@ -863,7 +900,7 @@
 
             Также бонусом вы получите «10 вопросов, которые нужно задать подрядчику», которого вы собираетесь выбрать.
         </p>
-        <button class="warning__btn small-btn-style">Получить консультацию</button>
+        <button class="warning__btn small-btn-style modal-calling">Получить консультацию</button>
     </div>
 </section>
 
@@ -904,42 +941,7 @@
     </p>
 </section>
 
-<section class="technology wrapper-2">
-    <p class="technology__text">
-        Технология создания антискользящего покрытия родилась не сама собой, и не мы её изобрели. Тут нам нечего
-        скрывать и нечего стыдиться. Сегодня доподлинно не известно когда именно и кем она была изобретена, однако мы
-        знаем точно , что в 1984 году Канадский сельскохозяйственный университет рекомендовал разработанную и
-        проверенную технологию нарезки швов в бетонных полах как наиболее выгодную и наименее затратную технологию и
-        способ для предотвращения подскальзываний у коров. Во время исследований ученые обратили внимание, что этот
-        способ избавляет не только от подскальзываний. Нескользкий для животных пол создавал комфорт для коров, а вместе
-        с комфортом животные свободнее передвигались, без боязни упасть, больше ели и пили, тем самым увеличивая надои
-        молока и общую рентабельность фермы. Стало легче выявлять период охоты у коров, чтобы успевать вовремя покрыть
-        животных.
-    </p>
-    <p class="technology__text">
-        Естественно эта технология сравнивалась с имеющимися на тот момент решениями, такими как коврики в проходах
-        коровника, или маты возле поилок, с наливными полами или эпоксидными покрытиями пола, с резиновыми плитами. Было
-        рассмотрено множество вариаций устройства полов в коровнике. Рассматривались фермерские хозяйства с различным
-        поголовьем, и 200, и 400, и 600, и 800 голов. Да, хозяйства, которые много зарабатывают, могут себе позволить
-        застелить все проходы и галереи резиновыми ковриками. Однако уже тогда Канадский институт опытным путем выяснил
-        и доказал, что коврики менее эффективны, чем антискользящее покрытие.
-    </p>
-    <p class="technology__text">
-        Мы тоже не сразу пришли к созданию канавок и штроблению бетонного пола насечками в коровнике. Мы были одними из
-        тех, кто предлагал различные вариации резиновых ковриков для коров, и маленькие квадратные коврики, и пазловые
-        резиновые коврики, с разной толщиной этих ковриков (или иногда называемых резиновыми матами).
-    </p>
-    <p class="technology__text">
-        Да, это не секрет, что есть множество организаций, компаний и проектных институтов, которые могут вам предложить
-        не только проектирование и строительство коровников в общем понятии этих слов, однако более детальными,
-        инновационными или технически грамотными и простыми решениями многие не смогут похвастать. Именно неопытные или
-        неразвивающиеся компании и организации при проектировании не будут уделять устройству полов в коровнике должного
-        внимания. Будьте осторожны и внимательны! Для строительства коровника недостаточно скачать проект бесплатно из
-        интеренета, вам не выдаст ни один поисковик грамотного устройства полов. Зато множество компаний наперебой будут
-        продавать для крс резиновые полы, резиновые экоплиты, наливные полы. Они не думают о вашей выгоде, и не будут
-        считать ваши деньги. Они просто хотят продать вам коврики (они же маты для крс).
-    </p>
-</section>
+
 
 <section class="footer">
     <div class=" wrapper-2">
@@ -962,7 +964,7 @@
             <div class="footer__item item-2">
                 <a href="tel:+375333307321">+375(33)-330-73-21</a>
                 <a href="mailto:Mmerzlyackov@mail.ru">Mmerzlyackov@mail.ru</a>
-                <button class="footer__btn small-btn-style">Заказать звонок</button>
+                <button class="footer__btn small-btn-style modal-calling">Заказать звонок</button>
             </div>
         </div>
     </div>

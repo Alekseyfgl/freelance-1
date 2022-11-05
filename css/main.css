@@ -26,6 +26,11 @@ input::-ms-clear {
   display: none;
 }
 
+input:focus {
+  box-shadow: 0 0 15px rgb(81, 203, 219);
+  transition: 0.2s;
+}
+
 button {
   cursor: pointer;
 }
@@ -220,6 +225,10 @@ body {
   width: 280px;
   margin: 0 auto;
   font-size: 15px;
+}
+
+.small {
+  max-width: 416px;
 }
 
 .show {
