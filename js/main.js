@@ -1,4 +1,5 @@
 const body = document.getElementsByTagName('body')[0];
+
 const modalCallingBtn = document.getElementsByClassName('modal-for-calling')[0]
 
 
@@ -44,6 +45,7 @@ function openModal(el) {
 
 
 const anchors = document.querySelectorAll('a[href^="#"]');
+console.log(anchors)
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', (event) => {
