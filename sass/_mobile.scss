@@ -1,0 +1,118 @@
+.header-burger {
+    display: none;
+}
+
+
+@media (max-width: 960px) {
+
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+
+    .main-section__title {
+        font-size: 20px;
+    }
+
+    .social__contact {
+        a {
+            font-size: 15px;
+        }
+      //display: none;
+    }
+
+
+    .social__info {
+        display: none;
+    }
+
+    .request-call {
+        padding: 8px 12px;
+    }
+    .btn-style {
+        font-size: 16px;
+    }
+
+    .social-networks {
+        margin-right: 48px;
+    }
+    .social-networks__wr {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .social {
+        margin-bottom: 0;
+    }
+    nav {
+        .navigation {
+            position: absolute;
+            left: -300%;
+        }
+    }
+
+    .content-main {
+        padding-top: 110px
+    }
+
+    .header-burger {
+        position: absolute;
+        display: inline-block;
+        height: 20px;
+        width: 30px;
+        right: 26px;
+        top: 16px;
+
+        &::before {
+            content: "";
+            background-color: #727989;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+            top: 0;
+        }
+
+        &::after {
+            content: "";
+            background-color: #727989;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+            bottom: 0;
+        }
+
+        span {
+            position: absolute;
+            background-color: #727989;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+        }
+    }
+
+
+
+    .types-coverings {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 645px) {
+    .social__contact {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .content-main__text {
+        min-width: 320px;
+        max-width: 400px;
+    }
+}
