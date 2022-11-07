@@ -1145,7 +1145,7 @@ body {
     height: 20px;
     width: 30px;
     right: 26px;
-    top: 16px;
+    top: 20px;
   }
   .header-burger::before {
     content: "";
@@ -1219,7 +1219,17 @@ body {
     display: none;
   }
 }
-@media (max-width: 645px) {
+@media (max-width: 680px) {
+  .modal__form {
+    padding-top: 36px;
+  }
+  .modal__dialog {
+    height: 80vh;
+    overflow: scroll;
+  }
+  .modal__content {
+    flex-direction: column-reverse;
+  }
   .social__contact {
     display: none;
   }
