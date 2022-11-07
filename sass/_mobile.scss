@@ -8,6 +8,8 @@
     .header {
         position: fixed;
         width: 100%;
+        z-index: 10;
+        background-color: rgba(60, 60, 60, 1);
     }
 
     .main-section__title {
@@ -18,7 +20,6 @@
         a {
             font-size: 15px;
         }
-      //display: none;
     }
 
 
@@ -98,9 +99,66 @@
     }
 
 
-
     .types-coverings {
         background-size: cover;
+    }
+
+
+    //history
+    .history {
+        padding-left: 15px;
+        padding-right: 15px;
+        .colum-history {
+            flex-direction: column;
+            align-items: center;
+            //background-color: #ededed;
+
+
+            .items-history {
+
+
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: 30px;
+                background-color: #fff;
+                color: #3e3d3d;
+                z-index: 2;
+
+                &:nth-child(odd)::before {
+                    display: none;
+
+                    p {
+                        &::before {
+                            content: none;
+                        }
+                    }
+                }
+
+                &:nth-child(odd)::after {
+                    display: none;
+                }
+
+                &:nth-child(even)::before {
+                    display: none;
+
+                    p {
+                        &::before {
+                            content: none;
+                        }
+                    }
+                }
+
+                &:nth-child(even)::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .colum-history .items-history:nth-child(odd) p::before {
+        display: none;
+    }
+    .colum-history .items-history:nth-child(even) p::before {
+        display: none;
     }
 }
 
@@ -111,8 +169,32 @@
 }
 
 @media (max-width: 570px) {
+    .warning {
+        padding-top: 90px;
+    }
     .content-main__text {
         min-width: 320px;
         max-width: 400px;
+        //width: 100%;
     }
+}
+
+@media (max-width: 490px) {
+    .request-call {
+        display: none;
+    }
+
+    .content-main__wr-message {
+        flex-direction: column;
+
+    }
+
+    .content-main__text {
+        width: 100%;
+    }
+    .content-main__phone {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
