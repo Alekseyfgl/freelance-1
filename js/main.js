@@ -1,7 +1,24 @@
 const body = document.getElementsByTagName('body')[0];
-
 const modalCallingBtn = document.getElementsByClassName('modal-for-calling')[0]
+const header = document.getElementsByClassName('header')[0];
 
+header.addEventListener('click', (event) => {
+    const target = event.target;
+    // const body = document.getElementsByTagName('body')[0];
+    const btnBurger = document.getElementsByClassName('header-burger')[0];
+    console.log(btnBurger)
+
+    if (target.classList.contains('header-burger')) {
+        btnBurger.classList.toggle('active');
+        header.classList.toggle('active');
+        body.classList.toggle('block')
+
+    } else if (target.tagName === 'LI' || target.tagName === 'A') {
+        btnBurger.classList.remove('active');
+        header.classList.remove('active');
+        body.classList.remove('block')
+    }
+});
 
 body.onclick = (e) => {
     const target = e.target;
@@ -45,7 +62,6 @@ function openModal(el) {
 
 
 const anchors = document.querySelectorAll('a[href^="#"]');
-console.log(anchors)
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', (event) => {

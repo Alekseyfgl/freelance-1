@@ -8,11 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/_mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_mobile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/_setting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_setting.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,7 @@
       <workItem from="1667837072285" duration="2759000" />
       <workItem from="1668712303054" duration="600000" />
       <workItem from="1668713001885" duration="938000" />
-      <workItem from="1670169369571" duration="1970000" />
+      <workItem from="1670169369571" duration="6139000" />
     </task>
     <servers />
   </component>
