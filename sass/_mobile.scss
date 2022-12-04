@@ -12,6 +12,18 @@
         background-color: rgba(60, 60, 60, 1);
     }
 
+    nav .navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+        opacity: 0.92;
+    }
+
     .main-section__title {
         font-size: 20px;
     }
@@ -46,12 +58,6 @@
 
     .social {
         margin-bottom: 0;
-    }
-    nav {
-        .navigation {
-            position: absolute;
-            left: -300%;
-        }
     }
 
     .content-main {
@@ -208,6 +214,18 @@
     .content-main__phone {
         min-width: 100%;
         margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .content-main__title {
+        font-size: 29px;
+    }
+    .content-main__text {
+        min-width: auto;
+        max-width: none;
     }
 
 }

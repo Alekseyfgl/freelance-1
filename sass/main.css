@@ -75,6 +75,7 @@ body {
   line-height: 1.2;
   overflow-x: hidden;
   position: relative;
+  min-width: 320px;
 }
 
 .btn-style {
@@ -488,7 +489,7 @@ body {
   margin-bottom: 24px;
 }
 .founder__wr-img {
-  width: 390px;
+  max-width: 390px;
   height: 340px;
   margin-bottom: 10px;
 }
@@ -1105,6 +1106,17 @@ body {
     z-index: 10;
     background-color: rgb(60, 60, 60);
   }
+  nav .navigation {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+    opacity: 0.92;
+  }
   .main-section__title {
     font-size: 20px;
   }
@@ -1131,10 +1143,6 @@ body {
   }
   .social {
     margin-bottom: 0;
-  }
-  nav .navigation {
-    position: absolute;
-    left: -300%;
   }
   .content-main {
     padding-top: 110px;
@@ -1256,6 +1264,16 @@ body {
   .content-main__phone {
     min-width: 100%;
     margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 360px) {
+  .content-main__title {
+    font-size: 29px;
+  }
+  .content-main__text {
+    min-width: auto;
+    max-width: none;
   }
 }
 

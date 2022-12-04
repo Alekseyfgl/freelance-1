@@ -8,10 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/_mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_setting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_setting.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
   &quot;keyToString&quot;: {
     &quot;NewWatcherDialog.advanced.open&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/#vs/#project/freelance_1/js&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/#vs/#project/freelance_1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -139,7 +140,10 @@
       <workItem from="1667320675229" duration="3691000" />
       <workItem from="1667664237116" duration="6779000" />
       <workItem from="1667750936369" duration="6796000" />
-      <workItem from="1667837072285" duration="2711000" />
+      <workItem from="1667837072285" duration="2759000" />
+      <workItem from="1668712303054" duration="600000" />
+      <workItem from="1668713001885" duration="938000" />
+      <workItem from="1670169369571" duration="1970000" />
     </task>
     <servers />
   </component>
