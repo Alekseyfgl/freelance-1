@@ -1269,6 +1269,9 @@ body {
   nav .navigation {
     top: 64px;
   }
+  .order-cost-calculation {
+    margin-right: 0;
+  }
   .modal__form {
     padding-top: 36px;
   }
