@@ -25,6 +25,7 @@
 
     }
 
+
 }
 
 .header-burger {
@@ -41,6 +42,18 @@
         background-color: rgba(60, 60, 60, 1);
     }
 
+    .navigation {
+        display: block;
+        padding-left: 30px;
+        padding-top: 30px;
+        &__link {
+            color: #010101;
+        }
+        li {
+            border-radius: unset;
+            border-bottom: solid 1px #000;
+        }
+    }
     nav .navigation {
         position: fixed;
         top: 84px;
@@ -50,9 +63,13 @@
         background-color: #fff;
         transition: all 0.3s ease 0s;
         overflow: auto;
-        opacity: 0.92;
+        opacity: 0.96;
     }
 
+    .navigation  a {
+        color: #000;
+        text-align: left;
+    }
     .main-section__title {
         font-size: 20px;
     }
