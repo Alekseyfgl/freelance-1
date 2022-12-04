@@ -567,7 +567,7 @@ body {
 .types-coverings {
   background: url("../img/types/types1.jpg") no-repeat center top, url("../img/types/types2.jpg") no-repeat center 500px;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 65px;
 }
 .types-coverings__title {
   margin-bottom: 25px;
@@ -821,7 +821,7 @@ body {
 }
 .order .wrapper-2 {
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 65px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -914,7 +914,7 @@ body {
 }
 
 .works {
-  padding-top: 50px;
+  padding-top: 65px;
   padding-bottom: 50px;
 }
 .works__title {
