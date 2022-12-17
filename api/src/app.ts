@@ -7,10 +7,8 @@ import 'reflect-metadata';
 import { json } from 'body-parser';
 import { IConfigService } from './config/config.service.interface';
 import { IExceptionFilter } from './errors/exception.filter.interface';
-import { UsersController } from './users/users.controller';
-import {IEmailsController} from "./emails/emails-interfaces/emails.controller.interface";
-import {IUsersController} from "./users/users-interfaces/users.controller.interface";
-import {EmailsController} from "./emails/emails.controller";
+import { UsersController } from './server/users/users.controller';
+import { EmailsController } from './server/emails/emails.controller';
 
 @injectable()
 export class App {

@@ -3,15 +3,14 @@ import { UserRegisterDto } from './dto/user-register.dto';
 import { UserLoginDto } from './dto/user-login.dto';
 import { UserEntity } from './user.entity';
 import { inject, injectable } from 'inversify';
-import { TYPES } from '../types';
-import { IConfigService } from '../config/config.service.interface';
+import { TYPES } from '../../types';
+import { IConfigService } from '../../config/config.service.interface';
 
 @injectable()
 export class UsersService implements IUsersService {
-	constructor(@inject(TYPES.ConfigService) private configService: IConfigService) {
-	}
+	constructor(@inject(TYPES.ConfigService) private configService: IConfigService) {}
 
-	async createUser({name, email, password}: UserRegisterDto): Promise<UserEntity | null> {
+	async createUser({ name, email, password }: UserRegisterDto): Promise<UserEntity | null> {
 		const newUser: UserEntity = new UserEntity(name, email);
 
 		const salt: string = this.configService.get('SALT');

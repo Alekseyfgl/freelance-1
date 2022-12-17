@@ -11,4 +11,5 @@ export const TYPES = {
     ExceptionFilter: Symbol.for('ExceptionFilter'),
     ConfigService: Symbol.for('ConfigService'),
     EmailsController: Symbol.for('EmailsController'),
+    EmailsService: Symbol.for('EmailsService'),
 };
