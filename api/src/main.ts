@@ -12,6 +12,8 @@ import { UsersService } from './users/users.service';
 import { IUsersController } from './users/users-interfaces/users.controller.interface';
 import { IConfigService } from './config/config.service.interface';
 import { ConfigService } from './config/config.service';
+import {EmailsController} from "./emails/emails.controller";
+import {IEmailsController} from "./emails/emails-interfaces/emails.controller.interface";
 
 /**
  * для интерфейса ILogger будет соответствовать LoggerService
@@ -24,6 +26,7 @@ export const appBindings = new ContainerModule((bind: interfaces.Bind) => {
 	bind<IUsersService>(TYPES.UsersService).to(UsersService).inSingletonScope();
 	bind<IConfigService>(TYPES.ConfigService).to(ConfigService).inSingletonScope();
 	bind<App>(TYPES.Application).to(App).inSingletonScope();
+	bind<IEmailsController>(TYPES.EmailsController).to(EmailsController)
 });
 
 function bootstrap(): IBootstrapReturn {

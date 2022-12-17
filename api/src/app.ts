@@ -8,6 +8,9 @@ import { json } from 'body-parser';
 import { IConfigService } from './config/config.service.interface';
 import { IExceptionFilter } from './errors/exception.filter.interface';
 import { UsersController } from './users/users.controller';
+import {IEmailsController} from "./emails/emails-interfaces/emails.controller.interface";
+import {IUsersController} from "./users/users-interfaces/users.controller.interface";
+import {EmailsController} from "./emails/emails.controller";
 
 @injectable()
 export class App {
@@ -20,6 +23,7 @@ export class App {
 		@inject(TYPES.UsersController) private usersController: UsersController,
 		@inject(TYPES.ExceptionFilter) private exceptionFilter: IExceptionFilter,
 		@inject(TYPES.ConfigService) private configService: IConfigService,
+		@inject(TYPES.EmailsController) private emailsController: EmailsController,
 	) {
 		this.app = express();
 		this.port = 3000;
@@ -37,6 +41,7 @@ export class App {
 
 	useRoutes(): void {
 		this.app.use('/users', this.usersController.router);
+		this.app.use('/emails', this.emailsController.router);
 	}
 
 	public async init(): Promise<void> {
