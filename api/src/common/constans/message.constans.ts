@@ -1,4 +1,4 @@
-const enum MESSAGE_RESPONSE {
+export const enum MESSAGE_RESPONSE {
 	SUCCESSFULLY = 'successfully',
 	FAILED = 'failed',
 }

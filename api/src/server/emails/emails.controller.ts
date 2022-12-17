@@ -7,6 +7,7 @@ import { TYPES } from '../../types';
 import { ILogger } from '../../logger/logger.interface';
 import { IEmailsService } from './emails-interfaces/emails.service.interface';
 import { ValidateMiddleware } from '../../common/validate.middleware';
+import { MESSAGE_RESPONSE } from '../../common/constans/message.constans';
 
 @injectable()
 export class EmailsController extends BaseController implements IEmailsController {
@@ -22,9 +23,8 @@ export class EmailsController extends BaseController implements IEmailsControlle
 		]);
 	}
 
-	async ring(req: Request<{}, {}, EmailsRingDto>, res: Response, next: NextFunction) {
+	async ring(req: Request<{}, {}, EmailsRingDto>, res: Response, next: NextFunction): Promise<void> {
 		const result = await this.emailsService.ringBack(req.body);
-
 		this.ok(res, { message: MESSAGE_RESPONSE.SUCCESSFULLY });
 	}
 }

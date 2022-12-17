@@ -16,6 +16,8 @@ import { EmailsController } from './server/emails/emails.controller';
 import { IEmailsController } from './server/emails/emails-interfaces/emails.controller.interface';
 import { IEmailsService } from './server/emails/emails-interfaces/emails.service.interface';
 import { EmailsService } from './server/emails/emails.service';
+import { IEmailsRepository } from './server/emails/emails-interfaces/emails.repository.interface';
+import { EmailsRepository } from './server/emails/emails.repository';
 
 /**
  * для интерфейса ILogger будет соответствовать LoggerService
@@ -31,6 +33,7 @@ export const appBindings = new ContainerModule((bind: interfaces.Bind) => {
 	bind<IUsersService>(TYPES.UsersService).to(UsersService);
 	bind<IEmailsController>(TYPES.EmailsController).to(EmailsController);
 	bind<IEmailsService>(TYPES.EmailsService).to(EmailsService);
+	bind<IEmailsRepository>(TYPES.EmailsRepository).to(EmailsRepository);
 });
 
 function bootstrap(): IBootstrapReturn {
