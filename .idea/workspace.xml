@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sass/block.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sass/block.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -76,14 +76,14 @@
       <recent name="D:\#vs\#project\freelance_1\img\bg" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
-    <configuration name="block.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/block.js" working-dir="$PROJECT_DIR$/js">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.messages.js">
     <configuration name="main2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/main2.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/main.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="messages.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/js/messages.js" working-dir="$PROJECT_DIR$/frontend/js">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/test.js" working-dir="$PROJECT_DIR$/js">
@@ -101,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.messages.js" />
         <item itemvalue="npm.build" />
         <item itemvalue="Node.js.main2.js" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.main.js" />
-        <item itemvalue="Node.js.block.js" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +161,7 @@
       <workItem from="1670169369571" duration="9098000" />
       <workItem from="1671271089262" duration="7338000" />
       <workItem from="1671384175404" duration="2971000" />
-      <workItem from="1671475376571" duration="3055000" />
+      <workItem from="1671475376571" duration="5830000" />
     </task>
     <servers />
   </component>
