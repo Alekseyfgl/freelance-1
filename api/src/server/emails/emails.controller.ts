@@ -25,6 +25,7 @@ export class EmailsController extends BaseController implements IEmailsControlle
 	}
 
 	async ring(req: Request<{}, {}, EmailsRingDto>, res: Response, next: NextFunction): Promise<void> {
+		console.log(req.body);
 		const result: boolean = await this.emailsService.ringBack(req.body);
 		if (!result) {
 			return next(new HTTPError(500, MESSAGE_RESPONSE.FAILED));
