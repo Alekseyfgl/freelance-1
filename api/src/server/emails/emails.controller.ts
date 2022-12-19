@@ -8,6 +8,7 @@ import { ILogger } from '../../logger/logger.interface';
 import { IEmailsService } from './emails-interfaces/emails.service.interface';
 import { ValidateMiddleware } from '../../common/validate.middleware';
 import { MESSAGE_RESPONSE } from '../../common/constans/message.constans';
+import { HTTPError } from '../../errors/exception.filter';
 
 @injectable()
 export class EmailsController extends BaseController implements IEmailsController {
@@ -24,7 +25,10 @@ export class EmailsController extends BaseController implements IEmailsControlle
 	}
 
 	async ring(req: Request<{}, {}, EmailsRingDto>, res: Response, next: NextFunction): Promise<void> {
-		const result = await this.emailsService.ringBack(req.body);
+		const result: boolean = await this.emailsService.ringBack(req.body);
+		if (!result) {
+			return next(new HTTPError(500, MESSAGE_RESPONSE.FAILED));
+		}
 		this.ok(res, { message: MESSAGE_RESPONSE.SUCCESSFULLY });
 	}
 }

@@ -8,7 +8,7 @@ import { IEmailsRepository } from './emails-interfaces/emails.repository.interfa
 export class EmailsService implements IEmailsService {
 	constructor(@inject(TYPES.EmailsRepository) private readonly emailsRepository: IEmailsRepository) {}
 
-	async ringBack(dto: EmailsRingDto) {
+	async ringBack(dto: EmailsRingDto): Promise<boolean> {
 		return this.emailsRepository.callBack(dto);
 	}
 }

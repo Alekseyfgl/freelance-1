@@ -1,6 +1,5 @@
-import {NextFunction, Request, Response} from "express";
-
+import { NextFunction, Request, Response } from 'express';
 
 export interface IEmailsController {
-    ring : (req: Request, res: Response, next: NextFunction) => Promise<void>
+	ring: (req: Request, res: Response, next: NextFunction) => Promise<void>;
 }
