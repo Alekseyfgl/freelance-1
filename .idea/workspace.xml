@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/img/spinner.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/img/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sass/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sass/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/messages.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +169,7 @@
       <workItem from="1671384175404" duration="2971000" />
       <workItem from="1671475376571" duration="5924000" />
       <workItem from="1671646563590" duration="6776000" />
-      <workItem from="1671729954955" duration="1951000" />
+      <workItem from="1671729954955" duration="2078000" />
     </task>
     <servers />
   </component>

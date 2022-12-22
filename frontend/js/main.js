@@ -21,7 +21,7 @@ header.addEventListener("click", (event) => {
 body.onclick = (e) => {
   const target = e.target;
   const modalElem = target.parentElement.parentElement.children[1];
-  // console.log(target);
+
   if (target.classList.contains("modal-calling")) {
     return openModal(modalCallingBtn);
   }
@@ -76,6 +76,10 @@ for (let anchor of anchors) {
   });
 }
 
+/**
+ *
+ * Отправка сообщений
+ */
 const URL = "http://localhost:3000";
 const ringBackForm = document.getElementById("ringBackForm");
 const ringBackPhone = document.getElementById("ringBackPhone");
