@@ -112,7 +112,7 @@ body {
   overflow: hidden;
 }
 
-.modal {
+.modal, .modal-status {
   position: fixed;
   top: 0;
   left: 0;
@@ -123,13 +123,13 @@ body {
   background-color: rgba(0, 77, 112, 0.8);
   cursor: auto;
 }
-.modal__dialog {
+.modal__dialog, .modal-status__dialog {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.modal__content {
+.modal__content, .modal-status__content {
   display: flex;
   position: relative;
   background-color: #fff;
@@ -137,27 +137,27 @@ body {
   border-radius: 4px;
   overflow-y: auto;
 }
-.modal__description {
+.modal__description, .modal-status__description {
   min-width: 320px;
   padding: 30px;
 }
-.modal__description-title {
+.modal__description-title, .modal-status__description-title {
   color: #0089c8;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.modal ul {
+.modal ul, .modal-status ul {
   margin-bottom: 26px;
 }
-.modal__description-sub-title {
+.modal__description-sub-title, .modal-status__description-sub-title {
   color: #0089c8;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.modal__description-list {
+.modal__description-list, .modal-status__description-list {
   position: relative;
 }
-.modal__description-list::before {
+.modal__description-list::before, .modal-status__description-list::before {
   content: " ";
   display: block;
   height: 5px;
@@ -168,11 +168,11 @@ body {
   left: -8px;
   border-radius: 50%;
 }
-.modal__form {
+.modal__form, .modal-status__form {
   padding: 65px 30px 65px 30px;
   background-color: #004d70;
 }
-.modal__close {
+.modal__close, .modal-status__close {
   position: absolute;
   top: 8px;
   right: 14px;
@@ -184,30 +184,30 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-.modal__title {
+.modal__title, .modal-status__title {
   text-align: center;
   font-size: 22px;
   color: #fff;
   margin-bottom: 20px;
 }
-.modal__text-form {
+.modal__text-form, .modal-status__text-form {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
 }
-.modal__label {
+.modal__label, .modal-status__label {
   margin-left: 45px;
   margin-bottom: 4px;
   font-size: 16px;
 }
-.modal__wr-input {
+.modal__wr-input, .modal-status__wr-input {
   margin-bottom: 16px;
   color: #fff;
 }
-.modal__wr-input label {
+.modal__wr-input label, .modal-status__wr-input label {
   font-size: 16px;
 }
-.modal__wr-input input {
+.modal__wr-input input, .modal-status__wr-input input {
   width: 100%;
   border-radius: 3px;
   padding: 8px;
@@ -217,15 +217,15 @@ body {
   font-size: 20px;
   color: #0089c8;
 }
-.modal__wr-input input::placeholder {
+.modal__wr-input input::placeholder, .modal-status__wr-input input::placeholder {
   opacity: 0.5;
   color: #0089c8;
 }
-.modal__ch {
+.modal__ch, .modal-status__ch {
   color: #fff;
   margin-bottom: 16px;
 }
-.modal__btn {
+.modal__btn, .modal-status__btn {
   display: block;
   width: 280px;
   margin: 0 auto;
@@ -249,6 +249,46 @@ body {
 }
 .modal__close:hover {
   opacity: 1;
+}
+
+.modal-status__dialog {
+  border-radius: 50%;
+}
+
+.modal-status__info {
+  background-color: #fff;
+  padding: 50px 40px 40px 40px;
+}
+
+.spiner {
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-status__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-status__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-status__ok {
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
 }
 
 .fade {

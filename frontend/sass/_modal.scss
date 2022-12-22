@@ -1,5 +1,9 @@
+//.modal-status {
 
-.modal {
+
+//}
+
+.modal, .modal-status {
     position: fixed;
     top: 0;
     left: 0;
@@ -162,7 +166,6 @@
 }
 
 
-
 .modal__close {
     transition: 0.3s;
 
@@ -171,10 +174,56 @@
     }
 }
 
+
+//modal message
+
+.modal-status__dialog {
+    border-radius: 50%;
+}
+
+.modal-status__info {
+    background-color: #fff;
+    padding: 50px 40px 40px 40px;
+}
+
+.spiner {
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-status__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: .5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.modal-status__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-status__ok {
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+
 .fade {
     animation-name: fade;
     animation-duration: 0.3s;
 }
+
 @keyframes fade {
     from {
         opacity: 0.3;

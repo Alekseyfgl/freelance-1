@@ -21,9 +21,19 @@ header.addEventListener("click", (event) => {
 body.onclick = (e) => {
   const target = e.target;
   const modalElem = target.parentElement.parentElement.children[1];
-
+  // console.log(target);
   if (target.classList.contains("modal-calling")) {
     return openModal(modalCallingBtn);
+  }
+
+  if (target.classList.contains("modal-status__close")) {
+    const modalStatus = target.parentElement.parentElement;
+    modalStatus.remove();
+  }
+
+  if (target.classList.contains("modal-status__ok")) {
+    const modalStatus = target.parentElement.parentElement.parentElement;
+    modalStatus.remove();
   }
 
   if (target.classList.contains("types-coverings__item-btn")) {
@@ -55,7 +65,6 @@ function openModal(el) {
 }
 
 const anchors = document.querySelectorAll('a[href^="#"]');
-
 for (let anchor of anchors) {
   anchor.addEventListener("click", (event) => {
     event.preventDefault();
@@ -65,4 +74,84 @@ for (let anchor of anchors) {
       block: "start",
     });
   });
+}
+
+const URL = "http://localhost:3000";
+const ringBackForm = document.getElementById("ringBackForm");
+const ringBackPhone = document.getElementById("ringBackPhone");
+
+ringBackForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const body = { phone: ringBackPhone.value.toString() };
+  return sendBody(body);
+});
+
+async function sendBody(body) {
+  try {
+    messageLoading();
+    const request = await fetch(`${URL}/emails/ring`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+
+    if (request.status.toString()[0] === "2") {
+      messageSuccess();
+      console.log("Сообщение отправлено");
+      return;
+    }
+    console.log("Error");
+    messageError();
+  } catch (error) {
+    messageError();
+    console.log("Error");
+  }
+}
+
+function messageError() {
+  const text = document.getElementsByClassName("modal-status__text")[0];
+  text.textContent = "Сообщение не отправлено, что-то пошло не так :(";
+  removeSpinner();
+  addBtnContinue();
+}
+
+function messageSuccess() {
+  const text = document.getElementsByClassName("modal-status__text")[0];
+  text.textContent = "Ваше сообщение успешно отправлено!";
+  removeSpinner();
+  addBtnContinue();
+}
+
+function removeSpinner() {
+  const spinner = document.getElementsByClassName("spiner")[0];
+  spinner.remove();
+}
+
+function addBtnContinue() {
+  document
+    .getElementsByClassName("modal-status__info")[0]
+    .insertAdjacentHTML(
+      "beforeend",
+      '<button class="modal-status__ok btn-style">Продолжить</button>'
+    );
+}
+
+function messageLoading() {
+  body.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div class="modal-status show fade">
+  <div class="modal-status__dialog">
+    <div class="modal-status__close" data-close="">×</div>
+    <div class="modal-status__info">
+      <p class="modal-status__text">Отправка сообщения...</p>
+      <img class="spiner" src="./img/spinner.svg" alt="spiner">
+    </div>
+  </div>
+</div>
+  `
+  );
 }
