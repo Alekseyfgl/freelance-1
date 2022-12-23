@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/server/emails/dto/emails-req-call.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/server/emails/messages/req-call.messages.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.controller.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.controller.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.repository.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.repository.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.service.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails-interfaces/emails.service.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/main.js" afterDir="false" />
     </list>
@@ -179,7 +171,7 @@
       <workItem from="1671729954955" duration="6454000" />
       <workItem from="1671806270720" duration="156000" />
       <workItem from="1671806452610" duration="137000" />
-      <workItem from="1671806608797" duration="2028000" />
+      <workItem from="1671806608797" duration="3000000" />
     </task>
     <servers />
   </component>

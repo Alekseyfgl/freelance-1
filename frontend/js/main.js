@@ -94,6 +94,21 @@ const reqCall = document.getElementById("req-call");
 const requestCallMin = document.getElementById("msg-minimum");
 const requestCallOptimum = document.getElementById("msg-optimum");
 const requestCallVip = document.getElementById("msg-vip");
+const orderForm = document.getElementById("msg-order");
+
+orderForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const url = `${URL}/emails/req-call`;
+  const modalNameCall = document.getElementById("order-name");
+  const modalPhoneCall = document.getElementById("order-phone");
+  const modalEmailCall = document.getElementById("order-email");
+  const body = {
+    name: modalNameCall.value,
+    phone: modalPhoneCall.value,
+    email: modalEmailCall.value,
+  };
+  return sendBody(body, url);
+});
 
 requestCallVip.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -180,8 +195,15 @@ async function sendBody(body, url) {
       console.log("Сообщение отправлено");
       return;
     }
-    console.log("Error");
+
+    if (request.status === 422) {
+      console.log("Error");
+      messageErrorValid();
+      return;
+    }
+
     messageError();
+    console.log("Error");
   } catch (error) {
     messageError();
     console.log("Error");
@@ -191,6 +213,13 @@ async function sendBody(body, url) {
 function messageError() {
   const text = document.getElementsByClassName("modal-status__text")[0];
   text.textContent = "Сообщение не отправлено, что-то пошло не так :(";
+  removeSpinner();
+  addBtnContinue();
+}
+
+function messageErrorValid() {
+  const text = document.getElementsByClassName("modal-status__text")[0];
+  text.textContent = "Пожалуйста заполните данные корректно";
   removeSpinner();
   addBtnContinue();
 }
