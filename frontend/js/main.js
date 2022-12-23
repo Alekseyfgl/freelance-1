@@ -2,10 +2,13 @@ const body = document.getElementsByTagName("body")[0];
 const modalCallingBtn = document.getElementsByClassName("modal-for-calling")[0];
 const header = document.getElementsByClassName("header")[0];
 
+const modalMin = document.getElementById("modal-min");
+const modalOptimum = document.getElementById("modal-optimum");
+const modalVip = document.getElementById("modal-vip");
+
 header.addEventListener("click", (event) => {
   const target = event.target;
   const btnBurger = document.getElementsByClassName("header-burger")[0];
-  console.log(btnBurger);
 
   if (target.classList.contains("header-burger")) {
     btnBurger.classList.toggle("active");
@@ -34,6 +37,8 @@ body.onclick = (e) => {
   if (target.classList.contains("modal-status__ok")) {
     const modalStatus = target.parentElement.parentElement.parentElement;
     modalStatus.remove();
+  } else if (target.classList.contains("modal-status")) {
+    target.remove();
   }
 
   if (target.classList.contains("types-coverings__item-btn")) {
@@ -64,6 +69,9 @@ function openModal(el) {
   document.body.style.overflow = "hidden";
 }
 
+/**
+ * Плавный скролл
+ */
 const anchors = document.querySelectorAll('a[href^="#"]');
 for (let anchor of anchors) {
   anchor.addEventListener("click", (event) => {
@@ -82,18 +90,83 @@ for (let anchor of anchors) {
  */
 const URL = "http://localhost:3000";
 const ringBackForm = document.getElementById("ringBackForm");
-const ringBackPhone = document.getElementById("ringBackPhone");
+const reqCall = document.getElementById("req-call");
+const requestCallMin = document.getElementById("msg-minimum");
+const requestCallOptimum = document.getElementById("msg-optimum");
+const requestCallVip = document.getElementById("msg-vip");
 
-ringBackForm.addEventListener("submit", (e) => {
+requestCallVip.addEventListener("submit", (e) => {
   e.preventDefault();
-  const body = { phone: ringBackPhone.value.toString() };
-  return sendBody(body);
+  const url = `${URL}/emails/req-call`;
+  const modalNameCall = document.getElementById("modal-name-vip");
+  const modalPhoneCall = document.getElementById("modal-phone-vip");
+  const modalEmailCall = document.getElementById("modal-email-vip");
+  const body = {
+    name: modalNameCall.value,
+    phone: modalPhoneCall.value,
+    email: modalEmailCall.value,
+  };
+  closeModal(modalVip);
+  return sendBody(body, url);
 });
 
-async function sendBody(body) {
+requestCallMin.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const url = `${URL}/emails/req-call`;
+  const modalNameCall = document.getElementById("modal-name-minimum");
+  const modalPhoneCall = document.getElementById("modal-phone-minimum");
+  const modalEmailCall = document.getElementById("modal-email-minimum");
+  const body = {
+    name: modalNameCall.value,
+    phone: modalPhoneCall.value,
+    email: modalEmailCall.value,
+  };
+  closeModal(modalMin);
+  return sendBody(body, url);
+});
+
+requestCallOptimum.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const url = `${URL}/emails/req-call`;
+  const modalNameCall = document.getElementById("modal-name-optimum");
+  const modalPhoneCall = document.getElementById("modal-phone-optimum");
+  const modalEmailCall = document.getElementById("modal-email-optimum");
+  const body = {
+    name: modalNameCall.value,
+    phone: modalPhoneCall.value,
+    email: modalEmailCall.value,
+  };
+  closeModal(modalOptimum);
+  return sendBody(body, url);
+});
+
+reqCall.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const url = `${URL}/emails/req-call`;
+  const modalNameCall = document.getElementById("modal-name-call");
+  const modalPhoneCall = document.getElementById("modal-phone-call");
+  const modalEmailCall = document.getElementById("modal-email-call");
+  const body = {
+    name: modalNameCall.value,
+    phone: modalPhoneCall.value,
+    email: modalEmailCall.value,
+  };
+  closeModal(modalCallingBtn);
+  return sendBody(body, url);
+});
+
+ringBackForm.addEventListener("submit", (e) => {
+  const url = `${URL}/emails/ring`;
+  const ringBackPhone = document.getElementById("ringBackPhone");
+  e.preventDefault();
+  const body = { phone: ringBackPhone.value.toString() };
+  return sendBody(body, url);
+});
+
+async function sendBody(body, url) {
   try {
     messageLoading();
-    const request = await fetch(`${URL}/emails/ring`, {
+    const request = await fetch(url, {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
