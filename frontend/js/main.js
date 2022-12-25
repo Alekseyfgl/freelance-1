@@ -88,7 +88,7 @@ for (let anchor of anchors) {
  *
  * Отправка сообщений
  */
-const URL = "http://localhost:3000";
+const URL = "https://api-mixa.onrender.com";
 const ringBackForm = document.getElementById("ringBackForm");
 const reqCall = document.getElementById("req-call");
 const requestCallMin = document.getElementById("msg-minimum");

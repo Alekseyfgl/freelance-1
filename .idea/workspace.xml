@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da78a11-0463-47b2-8766-c9282d449959" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server/emails/emails.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,8 @@
       <workItem from="1671806452610" duration="137000" />
       <workItem from="1671806608797" duration="3803000" />
       <workItem from="1671812838753" duration="403000" />
-      <workItem from="1671987231844" duration="245000" />
+      <workItem from="1671987231844" duration="591000" />
+      <workItem from="1671994330405" duration="35000" />
     </task>
     <servers />
   </component>
